@@ -1,0 +1,367 @@
+@font-face{
+	src:url('../fonts/GT-Walsheim-Pro-Regular.ttf');
+	font-family: 'GT Walsheim Pro Regular';
+}
+
+@font-face{
+	src:url('../fonts/GT-Walsheim-Pro-Bold.ttf');
+	font-family: 'GT Walsheim Pro Bold';
+}
+
+@font-face{
+	src:url('../fonts/GT-Walsheim-Pro-Medium.ttf');
+	font-family: 'GT Walsheim Pro Medium';
+}
+
+body, html{
+	width:100%;
+	height:100%;
+	margin:0;
+}
+
+.grid{
+	display: grid;
+	grid-template-rows: 70px 350px 2fr 2fr 2.25fr ;
+}
+
+/*FONTS*/
+
+
+h1 , h2, h3, h4, .nav a{
+	font-family: 'GT Walsheim Pro Bold';
+}
+
+h1{
+	font-size: 2.2rem;
+}
+
+h2{
+	font-size: 1.8rem;
+}
+
+h3{
+	font-size:1.2rem;
+}
+
+p, li{
+	font-family: 'GT Walsheim Pro Regular';
+	font-size: 1.5rem;
+}
+
+#copyright p{
+	font-size: 1rem;
+}
+
+.h-footer{
+	font-size:1.5rem;
+}
+
+.logo{
+	width:250px;
+	cursor: pointer;
+}
+
+.dik{
+	font-family: 'GT Walsheim Pro Bold';
+}
+
+a{
+	color:#28723D;
+}
+
+ul{
+	list-style-type: none;
+}
+
+/*SECTIE BANNER*/
+
+#banner{
+	width:100%;
+  	background-image: url('../afbeeldingen/header.png');
+  	background-repeat: no-repeat;
+  	background-size: cover;
+  	margin:0;
+  	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#banner h1{
+	margin-left:20px;
+	margin-right:20px;
+	color:#ffffff;
+	text-align: center;
+}
+
+.supermarkt{
+	clear:left;
+	text-align:center;
+	display: block;
+}
+
+/*SECTIE BESTELLINGEN*/
+
+#bestellingen{
+	display: flex;
+	flex-direction: column;
+}
+
+.bestellen{
+	text-align: center;
+	margin-left: 20px;
+	margin-right:20px;
+}
+
+.button_producten{
+	border: none;
+	display: inline-block;
+	height: 70px;
+	width:230px;
+	border-radius:20px;
+	font-family: 'GT Walsheim Pro Medium';
+	background-color:#3B6950;
+	color:#ffffff;
+	font-size: 1.5rem;
+	margin-bottom: 50px;
+}
+.button_producten:hover{
+	cursor: pointer;
+	background-color:#75AD8E;
+}
+
+.button_sectie{
+	display:flex;
+	justify-content: center;
+}
+
+.bestelwagen{
+	width:408px;
+	height:216px;
+	margin-right:auto;
+	margin-left: auto;
+}
+
+.bestelwagen_sectie{
+	display:flex;
+	justify-content: center;
+}
+
+/*SECTIE GERECHTEN*/
+
+#gerechten_sectie h2{
+	text-align:center;
+}
+
+.titel-gerechten:hover{
+	color:#28723D;
+	cursor: pointer;
+}
+
+.rijst{
+  	background-image: url('../afbeeldingen/rijst.jpg');
+  	margin-bottom:20px;
+  	margin-right:20px;
+}
+
+.groente{
+	background-image: url('../afbeeldingen/groente.jpg');
+	margin-bottom:20px;
+}
+
+.sperziebonen{
+	background-image: url('../afbeeldingen/sperziebonen.jpg');
+  	margin-right:20px;
+}
+
+.havermout{
+	background-image: url('../afbeeldingen/havermout.jpg');
+}
+
+.rijst , .groente , .sperziebonen , .havermout{
+  	background-repeat:no-repeat;
+  	background-size: cover;
+	border-radius:20px;
+}
+
+.fotos_gerecht{
+	width:235px;
+	height:200px;
+}
+
+.gerechten{
+	flex-direction: row;
+	flex-wrap:wrap;
+	margin-right: 25px;
+	margin-left: 25px;
+}
+
+.gerechten , .contact_info , .openingstijden , .spar_sectie , .rijst , .groente , .sperziebonen , .havermout{
+	display: flex;
+}
+
+.titel-gerechten{
+	color:#ffffff;
+	align-self: flex-end;
+	margin-left:7px;
+	margin-right:7px;
+}
+
+/*FOOTER*/
+
+footer{
+	background-color: #F7F7F7;
+}
+
+.spar_logo{
+	width:170px;
+	height:29.07px;
+}
+
+.spar_sectie{
+	margin-top:30px;
+}
+
+.spar_sectie , .footer_tekst , .contact_sectie , .openingstijden{
+	margin-right:25px;
+	margin-left:25px;
+}
+
+#copyright p , .footer_tekst , .contact_sectie h3 , .openingstijden_sectie h3 {
+	text-align: center;
+}
+
+.contact_info , .openingstijden , .spar_sectie , .gerechten{
+	justify-content: center;
+}
+
+.contact_sectie , .openingstijden_sectie{
+	margin-top:40px;
+}
+
+.openingstijden_sectie ul{
+	margin-top:-10px;
+}
+
+#copyright{
+	margin-top:20px;
+	height:50px;
+	background-color: #28723D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+#copyright p{
+	color:#ffffff;
+	margin-right:25px;
+	margin-left:25px;
+}
+
+@media only screen and (min-width:700px) and (max-width:1000px){
+
+
+	.bestelwagen{
+		width:450px;
+		height:238px;
+	}
+
+	.fotos_gerecht{
+		max-width:800px;
+		max-height:622px;
+		margin-right:20px;
+		margin-left: 20px;
+	}
+
+	.rijst , .groente{
+	  	margin-bottom:40px;
+	}
+
+	.sperziebonen{
+		clear:left;
+	}
+
+	.groente{
+		clear:right;
+	}
+
+}
+
+@media only screen and (min-width:1001px){
+	.grid{
+		grid-template-rows: 70px 300px 1fr 0.5fr 1fr ;
+	}
+}
+
+@media only screen and (min-width:1001px) and (max-width:1500px){
+
+	.bestelwagen{
+		width:550px;
+		height:291px;
+	}
+
+	#bestellingen{
+		margin-bottom: 80px;
+	}
+
+	#gerechten_sectie{
+		margin-bottom:80px;
+	}
+
+	.fotos_gerecht{
+		width:260px;
+		height:221px;
+		margin-right:20px;
+		margin-left: 20px;
+	}
+
+	.rijst , .groente{
+	  	margin-bottom:40px;
+	}
+
+	.spar_logo{
+		width:200px;
+		height:34.2px;
+	}	
+
+}
+
+@media only screen and (min-width:1501px){
+
+	.logo{
+		width:270px;
+		height:46.7px;
+		cursor: pointer;
+		display: flex;
+	}
+
+	.button_producten{
+		height: 60px;
+		width:230px;
+	}
+
+	.bestelwagen{
+		width:600px;
+		height:317px;
+	}
+
+	#bestellingen{
+		margin-bottom:80px;
+	}
+
+	#gerechten_sectie{
+		margin-bottom:80px;
+	}
+
+	.fotos_gerecht{
+		width:300px;
+		height:255px;
+		margin-right:20px;
+		margin-left: 20px;
+	}
+
+	.rijst , .groente{
+	  	margin-bottom:40px;
+	}
+
+}
+

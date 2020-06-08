@@ -1,0 +1,104 @@
+	/*Navigatie*/
+
+.nav{
+	border-bottom: 1px solid pink;
+	text-align: right;
+	height:70px;
+	line-height: 70px;
+	display:flex;
+	flex-direction: row;
+}
+
+.zijkant-menu{
+	order:3;
+	float:right;
+}
+
+.midden-header{
+	order:1;
+	flex-grow:2;
+	display: flex;
+	justify-content: flex-start;
+}
+
+.menu{
+	margin:0 30px 0 0;
+	text-align:right;
+}
+
+.menu a{
+	text-decoration: none;
+	color:#000000;
+	margin:0 10px;
+	line-height: 70px;
+	clear:right;
+}
+
+.menu a:hover{
+	color:#28723D;
+}
+
+/*DIE HAMBURGERMENU OPMAAK. DIT IS DESKTOP VERSIE*/
+label{
+	margin:0 40 0 0;
+	font-size:45px;
+	line-height: 70px;
+	display: none;
+	width: 26px;
+	float:left;
+}
+
+#toggle{
+	display: none;
+}
+label{
+		display: block;
+		cursor: pointer;
+		/*margin-left: auto;
+		margin-right: auto;*/
+		margin-left:40px;
+		display: none;
+	}
+
+/* EINDE DESKTOP VERSIE*/
+
+/*TELEFOON*/
+
+@media only screen and (max-width:1000px){
+
+	label{
+		display: block;
+	}
+	
+
+	.menu{
+	display: none;
+	width: 100%;
+	text-align: center;
+	}
+
+	.menu a {
+		display: block;
+		border-bottom: 1px solid pink;
+		margin: 0;
+	}
+
+	.nav{
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		width: 100%;
+	}
+
+	.midden-header{
+		width:40%;
+		display: flex;
+		justify-content: center;
+	}
+
+	.zijkant-header{
+		width: 30%;
+		display: flex;
+		align-items: flex-end;
+		order:1;
+	}
